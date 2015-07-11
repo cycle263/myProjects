@@ -12,7 +12,7 @@
 <script>
 $(document).ready(function() {
     ZeroClipboard.config({ 
-        swfPath: '/flash/ZeroClipboard.swf' 
+        swfPath: './flash/ZeroClipboard.swf' 
     });
     var clip = new ZeroClipboard($("#copy_button"));
     clip.on("aftercopy", function(event) {
