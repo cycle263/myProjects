@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Zero Test</title>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/ZeroClipboard.js"></script>
+</head>
+
+<script language="JavaScript">
+$(document).ready(function() {
+
+  var clip = new ZeroClipboard($("#copy_button"), {
+      moviePath: "flash/ZeroClipboard.swf"
+    });     
+});
+</script>
+
+<body>
+<button id='#copy_button' data-clipboard-target='to_copy'><b>Copy To Clipboard</b></button>
+
+<p id='to_copy'>123456</p>
+
+</body>
+</html>
