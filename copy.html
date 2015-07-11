@@ -11,9 +11,10 @@
 <script src="javascripts/ZeroClipboard.js"></script>
 <script>
 $(document).ready(function() {
-  var clip = new ZeroClipboard($("#copy_button"), {
-      moviePath: "flash/ZeroClipboard.swf"
-    });     
+    ZeroClipboard.setDefaults({ 
+        moviePath: '/flash/ZeroClipboard.swf' 
+    });
+    var clip = new ZeroClipboard($("#copy_button"));     
 });
 </script>
 </body>
